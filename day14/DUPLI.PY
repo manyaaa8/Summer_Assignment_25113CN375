@@ -11,6 +11,6 @@ for num in vals:
     else:
         dic[num]+=1 # if the element is present , then we simply increase the value by 1
 for key,values in dic.items():
-    if dic[key]>1:
-        print(key,"has",values,"no. of duplictes")
+    if values>1: #check whether it has occured more than 1 time.
+        print(key,"has",values," duplictes")
     
