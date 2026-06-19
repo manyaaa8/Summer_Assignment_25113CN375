@@ -1,3 +1,4 @@
+# THIS IS FOR THE SQUARE MATRIX
 mat1=[]
 row=int(input("enter the number of rows you want :-"))
 col=int(input("enter the number of columns you want:-"))
@@ -30,4 +31,4 @@ for i in range(row):
             diag2+= mat1[i][j]
 print(diag2)
 print("THE SUM OF THE DIAGONAL IS:-")
-print(sum)
+print(diag1+diag2)
