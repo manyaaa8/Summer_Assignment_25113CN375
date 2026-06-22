@@ -6,6 +6,6 @@ for i in st:
         a=ord(i)-32
         newst+=chr(a)
     else:
-         newst+=i
-       
+         newst+=i     
+print("AFTER CONVERSION:-")
 print(newst)

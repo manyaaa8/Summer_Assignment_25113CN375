@@ -5,6 +5,7 @@ j=len(st)-1
 while j>=0:
     newst+=st[j]
     j-=1
+print("THE REVERSE STRING IS:-")
 print(newst) # in this time complexity is O(n^2)
     
     

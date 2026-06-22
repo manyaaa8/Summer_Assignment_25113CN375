@@ -6,5 +6,7 @@ for i in st:
       vol+=1
     else:
         col+=1
-print("THE NUMBER OF VOWELS IS ",vol) 
-print("THE NUMBER OF CONSONANT IS ",col)   
+print("THE NUMBER OF VOWELS IS:-") 
+print(vol)
+print("THE NUMBER OF CONSONANT IS:- ") 
+print(col)  
