@@ -3,9 +3,11 @@ arr1=array("i",[])
 arr2=array("i",[])
 merge=array("i",[])
 n=int(input("enter the number of elements you want:-"))
+print("first array:-")
 for i in range(0,n):
     x=int(input("enter the element:-"))
     arr1.append(x)
+print("second array:-")
 for i in range(0,n):
     ele=int(input("enter the element:-"))
     arr2.append(ele)
