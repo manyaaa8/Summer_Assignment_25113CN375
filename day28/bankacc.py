@@ -1,7 +1,6 @@
 print("**************** BANK ACCOUNT SYSTEM ****************")
 bank = [[1001, "Rahul", 50000, 9876543210],
     [1002, "Priya", 75000, 9876501234]]
-
 def create_account():
     acc_no = int(input("ENTER ACCOUNT NUMBER : "))
     for account in bank:
@@ -74,13 +73,8 @@ def check_balance():
         if account[0] == acc_no:
             print("CURRENT BALANCE :", account[2])
             return
-
     print("ACCOUNT NOT FOUND.")
-
-
 while True:
-
-    print("\n******** MENU ********")
     print("1. CREATE ACCOUNT")
     print("2. DISPLAY ALL ACCOUNTS")
     print("3. SEARCH ACCOUNT")
@@ -89,7 +83,6 @@ while True:
     print("6. DELETE ACCOUNT")
     print("7. CHECK BALANCE")
     print("8. EXIT")
-
     choice = int(input("ENTER YOUR CHOICE : "))
     if choice == 1:
         create_account()

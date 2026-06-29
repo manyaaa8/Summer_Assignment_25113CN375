@@ -1,10 +1,7 @@
 print("*************** TICKET BOOKING SYSTEM ***************")
-
-tickets = [
-    [101, "Delhi to Mumbai", 1200, 20],
+tickets = [[101, "Delhi to Mumbai", 1200, 20],
     [102, "Delhi to Jaipur", 800, 15],
-    [103, "Delhi to Lucknow", 1000, 10]
-]
+    [103, "Delhi to Lucknow", 1000, 10]]
 def book_ticket():
     ticket_id = int(input("ENTER TICKET ID : "))
     for ticket in tickets:
@@ -26,7 +23,7 @@ def display_tickets():
     else:
         print("\nID\tROUTE\t\t\tPRICE\tNO.OF SEATS")
         for ticket in tickets:
-            print(ticket[0],"\t" ticket[1],"\t" ticket[2],"\t" ticket[3])
+            print(ticket[0],"\t", ticket[1],"\t", ticket[2],"\t",ticket[3])
 def search_ticket():
     flag=0
     ticket_id = int(input("ENTER TICKET ID : "))
@@ -59,7 +56,7 @@ def add_ticket():
     for ticket in tickets:
         if ticket[0] == ticket_id:
             print("TICKET ID ALREADY EXISTS")
-            break
+            return
     route = input("ENTER ROUTE : ")
     price = float(input("ENTER PRICE : "))
     seats = int(input("ENTER TOTAL SEATS : "))

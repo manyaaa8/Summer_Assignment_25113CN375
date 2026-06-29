@@ -4,7 +4,6 @@ library = [ [101, "Python", "Guido", 5],
     [103, "Data Structures", "Mark", 4]]
 def add_book():
     book_id = int(input("ENTER BOOK ID : "))
-
     for book in library:
         if book[0] == book_id:
             print("BOOK ID ALREADY EXISTS.")
@@ -35,11 +34,8 @@ def search_book():
             print("QUANTITY :", book[3])
             return
     print("BOOK NOT FOUND.")
-
-
 def issue_book():
     book_id = int(input("ENTER BOOK ID : "))
-
     for book in library:
         if book[0] == book_id:
             if book[3] > 0:
@@ -48,17 +44,14 @@ def issue_book():
             else:
                 print("BOOK NOT AVAILABLE.")
             return
-
     print("BOOK NOT FOUND.")
 def return_book():
     book_id = int(input("ENTER BOOK ID : "))
-
     for book in library:
         if book[0] == book_id:
             book[3] += 1
             print("BOOK RETURNED SUCCESSFULLY.")
             return
-
     print("BOOK NOT FOUND.")
 def delete_book():
     book_id = int(input("ENTER BOOK ID : "))
@@ -76,27 +69,19 @@ while True:
     print("5. RETURN BOOK")
     print("6. DELETE BOOK")
     print("7. EXIT")
-
     choice = int(input("ENTER YOUR CHOICE : "))
-
     if choice == 1:
         add_book()
-
     elif choice == 2:
         display_books()
-
     elif choice == 3:
         search_book()
-
     elif choice == 4:
         issue_book()
-
     elif choice == 5:
         return_book()
-
     elif choice == 6:
         delete_book()
-
     elif choice == 7:
         print("THANK YOU FOR USING LIBRARY MANAGEMENT SYSTEM")
         break
